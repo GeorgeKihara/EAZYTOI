@@ -7,7 +7,7 @@ def homepage():
     the_time = datetime.now().strftime("%A, %d %b %Y %l:%M %p")
 
     return """
-    <h1 style="text-align:center;">Hello world</h1>
+    <h1 style="text-align:center;">Welcome to EAZYTOI</h1>
     <p>It is currently {time}.</p>
 
     """.format(time=the_time)

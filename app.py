@@ -3,6 +3,12 @@ from datetime import datetime
 from flask_pymongo import PyMongo
 app = Flask(__name__)
 
+#connections to the mongo database
+app.config['MONGO_DBNAME'] = 'bktlist'
+app.config['MONGO_URI'] = 'mongodb://kihara:kihara@ds151752.mlab.com:51752/bktlist'
+
+mongo = PyMongo(app)
+
 
 @app.route('/')
 def homepage():

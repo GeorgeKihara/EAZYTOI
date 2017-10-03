@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template, redirect
 from datetime import datetime
 app = Flask(__name__)
 
@@ -11,6 +11,9 @@ def homepage():
     <p>It is currently {time}.</p>
 
     """.format(time=the_time)
+@app.route('/index')
+def index():
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True, port=8000)

@@ -6,9 +6,9 @@ This web app has been  developed using: Python-Flask
 `sudo apt-get install python-virtualenv`
 
 ## Create the directory structure
->mkdir -p /eazytoi
->cd /eazytoi
->mkdir logs
+mkdir -p /eazytoi <br>
+cd /eazytoi <br>
+mkdir logs <br>
 
 ## Clone the project
 `git clone https://github.com/GeorgeKihara/EAZYTOI.git` <br>

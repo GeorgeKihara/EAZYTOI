@@ -3,7 +3,7 @@ A web application that enables its users find public lavatories(toilets) that ar
 ## Development
 This web app has been  developed using: Python-Flask
 ## Install virtualenv
->`sudo apt-get install python-virtualenv`
+`sudo apt-get install python-virtualenv`
 
 ## Create the directory structure
 >mkdir -p /eazytoi
@@ -11,13 +11,13 @@ This web app has been  developed using: Python-Flask
 >mkdir logs
 
 ## Clone the project
->`git clone https://github.com/GeorgeKihara/EAZYTOI.git`
+`git clone https://github.com/GeorgeKihara/EAZYTOI.git` <br>
 
 ## Initialize virtualenv and install dependencies
->virtualenv eazytoiEnv
->cd eazytoi
->pip install -r requirements.txt
+virtualenv eazytoiEnv <br>
+cd eazytoi <br>
+pip install -r requirements.txt <br>
 
 ## Running
->python app.py
+python app.py <br>
 Type `http://127.0.0.1/7000`

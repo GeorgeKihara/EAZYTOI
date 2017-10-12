@@ -1,6 +1,10 @@
 .DS_Store
 readme_assets
 
+# heroku stuff
+.Procfile
+.runtime.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

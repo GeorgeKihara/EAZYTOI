@@ -25,6 +25,10 @@ def homepage():
 def learn():
     return render_template('learn.html')
 
+@app.route('/react')
+def react():
+    return render_template('react.html')
+
 if  __name__ == '__main__':
     app.secret_key='mysecret'
     app.run(debug=True)

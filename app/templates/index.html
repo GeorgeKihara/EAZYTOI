@@ -3,10 +3,16 @@
 
 <head>
     <title>EazyToi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/w3.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <p>Welcome to eazytoi app</p>
-    <div>
+    <div class="map">
     {{googlemap("eazytoi_map", lat=0.23234234, lng=-0.234234234, markers=[(0.12, -0.45345)])}}
     </div>
 </body>

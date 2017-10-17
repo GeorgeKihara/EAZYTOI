@@ -1,10 +1,10 @@
 from flask import Flask, render_template, redirect
 from datetime import datetime
+from app import app
 from flask_pymongo import PyMongo
 from flask_googlemaps import GoogleMaps
 from flask_googlemaps import Map
 
-app = Flask(__name__, template_folder=".")
 GoogleMaps(app)
 
 #connections to the mongo database
@@ -16,7 +16,7 @@ mongo = PyMongo(app)
 
 @app.route('/')
 def homepage():
-    the_time = datetime.now().strftime("%A, %d %b %Y %l:%M %p")
+    the_time = datetime.now().strftime("%A, %d %b %Y")
 
     return """
     <h1 style="text-align:center;">Welcome to EAZYTOI</h1>
@@ -50,4 +50,6 @@ def index():
 
 if  __name__ == '__main__':
     app.secret_key='mysecret'
-	app.run(debug=True))
+    app.run(debug=True)
+    
+	
